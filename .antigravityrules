@@ -1,0 +1,23 @@
+# Antigravity Workspace Directives
+
+## Perfil & Padrões de Engenharia
+- Arquitetura: Clean Architecture, SOLID, Fail-Fast, Separação estrita de responsabilidades.
+- Contrato Primeiro: Definir tipos, interfaces e esquemas de validação antes da implementação da lógica de negócio.
+- Resiliência: Tratamento explícito de erros em todas as operações de I/O, timeouts e logs estruturados.
+- Zero Placeholders: Nunca deixar comentários ou stubs vazios como `// TODO: implement later` em trechos de código.
+- Padrão de Documentação: Português técnico (PT-BR) claro e objetivo.
+
+## Regras de Operação da IA
+1. Implementação estrita por fases e com validação contínua.
+2. Isolamento de Domínio: Nenhuma dependência externa ou detalhe de infraestrutura dentro de entidades ou casos de uso.
+3. Testes Automatizados: Casos de uso e regras de negócio cobertos por testes unitários e de integração com mocks/in-memory adapters quando apropriado.
+
+# Context Isolation & Scope Boundary
+
+## Restrição Estrita de Diretório (Root Boundary)
+- O escopo de execução deste agente está ESTRITAMENTE LIMITADO à raiz deste repositório e seus subdiretórios imediatos (`./`).
+- É TERMINANTEMENTE PROIBIDO:
+  1. Acessar ou referenciar caminhos relativos superiores (`../`, `../../`).
+  2. Ler, indexar, modificar ou listar arquivos fora deste diretório de projeto (`d:\mais projetos\Organizador de Horas Complementares`).
+  3. Sugerir imports, tipos ou dependências compartilhadas com projetos paralelos no mesmo workspace.
+- Todas as operações de leitura, escrita e execução devem ocorrer exclusivamente a partir deste diretório raiz.
