@@ -18,12 +18,15 @@ SKILLS-*.md
 node_modules/
 dist/
 build/
+.next/
+out/
 coverage/
 target/
 bin/
 obj/
 __pycache__/
 *.pyc
+data/
 
 # IDEs & System Files
 .vscode/

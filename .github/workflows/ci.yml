@@ -1,0 +1,34 @@
+name: CI - Organizador de Horas Complementares
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.7.0
+
+      - name: Instalar Dependências
+        run: pnpm install --frozen-lockfile
+
+      - name: Executar Testes Automatizados (Vitest)
+        run: pnpm run test
+
+      - name: Build do Projeto (Next.js)
+        run: pnpm run build
