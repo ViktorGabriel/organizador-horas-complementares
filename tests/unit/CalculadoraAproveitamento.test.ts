@@ -8,7 +8,7 @@ describe("CalculadoraAproveitamento (Domain Service)", () => {
     id: "curso-01",
     nomeCurso: "Engenharia de Software",
     instituicao: "Universidade X",
-    alunoNome: "Viktor Gabriel",
+    alunoNome: "Aluno de Graduação",
     alunoMatricula: "20241001",
     horasExigidas: 100,
     categorias: [

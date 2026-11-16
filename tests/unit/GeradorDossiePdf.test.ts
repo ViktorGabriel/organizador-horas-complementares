@@ -7,7 +7,7 @@ describe("GeradorDossiePdf (Infra PDF Service)", () => {
     const relatorioMock: RelatorioAproveitamentoGeral = {
       cursoNome: "Engenharia de Software",
       instituicao: "Faculdade de Tecnologia",
-      alunoNome: "Viktor Gabriel",
+      alunoNome: "Aluno de Graduação",
       alunoMatricula: "ENG-2024",
       horasExigidasTotal: 120,
       horasAproveitadasTotal: 80,
